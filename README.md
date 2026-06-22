@@ -1,6 +1,6 @@
 # Cursor 完整汉化工具：一键把界面变成中文
 
-> **平台说明**：本仓库的汉化工具**仅支持 macOS**（`Cursor.app`）。暂不提供 Windows / Linux 版本；Windows 用户请使用 [VibePM 发布页](https://www.vibepm.net/cursor/) 获取对应版本。  
+> **平台说明**：本仓库的汉化工具**仅支持 macOS**（`Cursor.app`）。
 > **适配版本**：Cursor `3.8.11`（内置 VS Code `1.105.1`，验证于 2026-06-23）  
 > 本工具面向日常使用 Cursor 的 **Mac 用户**，在**不修改 Cursor 核心程序**的前提下，将界面中的英文菜单、按钮、提示和说明替换为中文，降低阅读和操作成本。已实现**编辑器模式（Editor）**和**智能体模式（Agent）**两种界面的全面汉化。
 
