@@ -1,7 +1,7 @@
 # Cursor 完整汉化工具：一键把界面变成中文
 
-> **平台说明**：本仓库的汉化工具**仅支持 macOS**（`Cursor.app`）。
-> **适配版本**：Cursor `3.8.11`（内置 VS Code `1.105.1`，验证于 2026-06-23）  
+> **平台说明**：本仓库的汉化工具**仅支持 macOS**（`Cursor.app`）。  
+> **适配版本**：Cursor `3.8.23`（内置 VS Code `1.105.1`，验证于 2026-06-24）；`3.8.11` 亦验证通过。同系列 `3.8.x` 小版本通常可直接复用。  
 > 本工具面向日常使用 Cursor 的 **Mac 用户**，在**不修改 Cursor 核心程序**的前提下，将界面中的英文菜单、按钮、提示和说明替换为中文，降低阅读和操作成本。已实现**编辑器模式（Editor）**和**智能体模式（Agent）**两种界面的全面汉化。
 
 ## 工具介绍
@@ -163,10 +163,33 @@ localStorage.setItem('Cursor_Localization_Market_Online_Translate', '1')  // 开
 | 汉化没生效 / 汉化无效 | 确认已**完全退出并重启** Cursor；可用 `node -c` 检查生成的 JS 语法 |
 | 菜单仍是英文 | `Cmd+Shift+P` → **Configure Display Language** → **中文(简体) / zh-cn** → 再完全重启；若无该选项，安装 **Chinese (Simplified) Language Pack** 后重试 |
 | 装在非默认路径 / 脚本找不到 Cursor | 在 `Cursor_Localization_Tool.py` 用户配置区域填写安装路径与数据目录（见上文「路径配置」） |
-| 提示 installation appears to be corrupt | 重新运行 `python Cursor_Localization_Tool.py` |
+| 提示 installation appears to be corrupt | 见下方「注意事项」第 3 条。**不要**用其他直接修改 `workbench.desktop.main.js` 的汉化工具；本工具只注入 `workbench.html` 并同步校验值，正常重跑即可修复 |
 | 标准菜单仍是英文（语言包未装上） | 确认网络可访问 VS Code 市场并重跑脚本；或手动将匹配版本的 VSIX 重命名为 `VSCode-language-pack-zh-hans.vsix` 放入根目录后重跑 |
 | 语言包自动安装失败 | 命令面板运行 **Extensions: Install from VSIX...** 安装根目录 VSIX，再运行 **Configure Display Language** 选 **zh-cn**，重启 Cursor |
 | 离线环境 | 从 [语言包市场页](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans) 下载与 Cursor 内置 VS Code 主版本一致的 VSIX（如 `1.105.1` 对应 `1.105.x`），重命名后放入根目录 |
 | 部分英文未翻译 | 在对应词典中补充条目后重新注入 |
 | Cursor 大版本升级后语言包报错 | 重新运行汉化脚本，会自动下载与新版 Cursor 匹配的语言包 |
 | 需要恢复原版 | 运行 `取消汉化_Mac.sh` 或 `python Cursor_Localization_Tool.py --restore` |
+
+## 注意事项
+
+1. **每次 Cursor 升级后都要重跑一次汉化脚本。** Cursor 更新会覆盖安装目录，导致注入失效、菜单变回英文。重跑 `python Cursor_Localization_Tool.py` 即可，脚本会自动拉取与新版匹配的官方语言包。
+2. **务必「完全退出」Cursor 再重启**（`Cmd+Q`，并在活动监视器确认 `Cursor` / `CursorUIViewService` 进程已结束），不要只关窗口或重载窗口，否则汉化与还原都不会生效。
+3. **不要与其他「直接 patch 主程序 JS」的汉化工具混用。** Cursor 启动时会用 `product.json` 里的校验值（checksums）校验 `workbench.desktop.main.js` 等核心文件。若被别的工具改写且校验值未同步，就会弹出 **“Your Cursor installation appears to be corrupt. Please reinstall.”**。本工具只注入 `workbench.html` 并在注入后同步校验值，不改主 JS，因此不会触发该提示。如果你之前用过会改主 JS 的工具，先执行 `--restore` 或重装 Cursor 还原，再用本工具。
+4. **汉化分两层，性质不同**：
+   - VS Code 内核界面（菜单/命令/设置）= **微软官方语言包**（`MS-CEINTL.vscode-language-pack-zh-hans`，来源 `marketplace.visualstudio.com`），可随版本持续更新；
+   - Cursor 专有界面（AI 面板、Cursor 设置、市场等）= 本工具的**本地词典 + 注入脚本**（社区维护），新版本新增的英文可能滞后，需要在词典中补充。
+5. **Agent 对话与模型生成的内容不属于界面汉化范围**，不会被翻译。
+6. **官方语言包自动下载需要能访问 VS Code 市场**（`marketplace.visualstudio.com`）。离线环境请手动放入匹配版本的 VSIX（见上方「常见问题」离线条目）。
+7. **网络代理 / 公司设备**：若组织对 `Cursor.app` 做了完整性保护或只读挂载，注入可能失败；此时只能使用官方语言包层（标准菜单中文），Cursor 专有界面无法汉化。
+
+## 版本历史
+
+| 日期 | 适配 Cursor | 内置 VS Code | 说明 |
+| --- | --- | --- | --- |
+| 2026-06-24 | `3.8.23` | `1.105.1` | 验证通过；补充「注意事项」与 corrupt 提示的根因说明 |
+| 2026-06-23 | `3.8.11` | `1.105.1` | 首个发布版本 |
+
+> 验证方法：`/Applications/Cursor.app/Contents/Resources/app/package.json` → `version`（Cursor 版本）；同目录 `product.json` → `vscodeVersion`（VS Code 引擎版本）。
+
+完整变更记录见 [CHANGELOG.md](CHANGELOG.md)。
