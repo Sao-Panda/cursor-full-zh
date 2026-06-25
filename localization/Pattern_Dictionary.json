@@ -1,6 +1,6 @@
 {
   "description": "动态文本正则替换（MoShi_FanYi）。",
-  "updatedAt": "2026-06-08",
+  "updatedAt": "2026-06-26",
   "patterns": [
     {
       "regex": "^(\\d+) requests? remaining$",
@@ -866,6 +866,46 @@
       "regex": "^([\\d,.]+(?:K|M)?)\\s+out of\\s+([\\d,.]+(?:K|M)?)\\s+tokens$",
       "flags": "i",
       "replacement": "$1 / $2 token"
+    },
+    {
+      "regex": "^Agent asked (\\d+) async question$",
+      "flags": "",
+      "replacement": "智能体提出了 $1 个异步问题"
+    },
+    {
+      "regex": "^Agent asked (\\d+) async questions$",
+      "flags": "",
+      "replacement": "智能体提出了 $1 个异步问题"
+    },
+    {
+      "regex": "^Agent Review complete - Found (\\d+) potential issues?$",
+      "flags": "",
+      "replacement": "智能体审查完成 - 发现 $1 个潜在问题"
+    },
+    {
+      "regex": "^Review (\\d+) network access domains?$",
+      "flags": "",
+      "replacement": "审查 $1 个网络访问域名"
+    },
+    {
+      "regex": "^Show (\\d+) more$",
+      "flags": "",
+      "replacement": "再显示 $1 条"
+    },
+    {
+      "regex": "^All MCP servers from this plugin are already added\\.$",
+      "flags": "",
+      "replacement": "此插件的所有 MCP 服务器均已添加。"
+    },
+    {
+      "regex": "^Agent asked X async question\\(s\\)$",
+      "flags": "",
+      "replacement": "智能体提出了异步问题"
+    },
+    {
+      "regex": "^Automation Run #(\\d+)$",
+      "flags": "",
+      "replacement": "自动化运行 #$1"
     }
   ]
 }

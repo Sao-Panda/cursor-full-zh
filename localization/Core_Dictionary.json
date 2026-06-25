@@ -1,6 +1,6 @@
 {
   "description": "Cursor 通用界面主词典。修改后重新运行 Cursor_Localization_Tool.py 注入生效。",
-  "updatedAt": "2026-06-08",
+  "updatedAt": "2026-06-26",
   "sections": [
     {
       "id": "左侧导航栏",
@@ -9265,6 +9265,636 @@
         [
           "No workspace folder open",
           "未打开工作区文件夹"
+        ]
+      ]
+    },
+    {
+      "id": "cursor_3_8_24_新增",
+      "title": "Cursor 3.8.24 新增界面",
+      "entries": [
+        [
+          "A newer version of Cursor is available. We recommend updating for the best experience.",
+          "有更新的 Cursor 版本可用。建议更新以获得最佳体验。"
+        ],
+        [
+          "Update: restart Cursor to install",
+          "更新：重启 Cursor 以完成安装"
+        ],
+        [
+          "A beforeSubmitPrompt hook blocked this submission.",
+          "beforeSubmitPrompt 钩子已阻止此次提交。"
+        ],
+        [
+          "A configured hook has blocked this operation.",
+          "已配置的钩子已阻止此操作。"
+        ],
+        [
+          "A hook in your project configuration (.cursor/hooks.json) has blocked this operation.",
+          "项目配置（.cursor/hooks.json）中的钩子已阻止此操作。"
+        ],
+        [
+          "A hook in your user configuration (~/.cursor/hooks.json) has blocked this operation.",
+          "用户配置（~/.cursor/hooks.json）中的钩子已阻止此操作。"
+        ],
+        [
+          "A team hook has blocked this operation.",
+          "团队钩子已阻止此操作。"
+        ],
+        [
+          "An enterprise hook has blocked this operation.",
+          "企业钩子已阻止此操作。"
+        ],
+        [
+          "Submission blocked by hook",
+          "提交被钩子阻止"
+        ],
+        [
+          "This hook is controlled by your organization",
+          "此钩子由您的组织管理"
+        ],
+        [
+          "Reloading hooks configuration...",
+          "正在重新加载钩子配置..."
+        ],
+        [
+          "Refreshing team hooks...",
+          "正在刷新团队钩子..."
+        ],
+        [
+          "Agent asked 1 async question",
+          "智能体提出了 1 个异步问题"
+        ],
+        [
+          "Open Cursor to answer the agent's questions.",
+          "打开 Cursor 以回答智能体的问题。"
+        ],
+        [
+          "Agent Requires Login",
+          "智能体需要登录"
+        ],
+        [
+          "Agent features require authentication. Please sign in.",
+          "智能体功能需要身份验证。请登录。"
+        ],
+        [
+          "Agent features require login.",
+          "智能体功能需要登录。"
+        ],
+        [
+          "Authentication required. Please sign in to continue.",
+          "需要身份验证。请登录后继续。"
+        ],
+        [
+          "Authentication required. Please sign in.",
+          "需要身份验证。请登录。"
+        ],
+        [
+          "Authentication token has expired. Please sign in again.",
+          "身份验证令牌已过期。请重新登录。"
+        ],
+        [
+          "Authentication token not found. Please sign in again.",
+          "未找到身份验证令牌。请重新登录。"
+        ],
+        [
+          "Please login to continue using Cursor.",
+          "请登录以继续使用 Cursor。"
+        ],
+        [
+          "As a safety measure for our users, please login to use AI agents.",
+          "为保障用户安全，请登录后使用 AI 智能体。"
+        ],
+        [
+          "Agent Review Disabled",
+          "智能体审查已禁用"
+        ],
+        [
+          "Agent Review cancelled",
+          "智能体审查已取消"
+        ],
+        [
+          "Agent Review complete - Found 1 potential issue",
+          "智能体审查完成 - 发现 1 个潜在问题"
+        ],
+        [
+          "Agent Review is not available in this workspace.",
+          "此工作区不支持智能体审查。"
+        ],
+        [
+          "Agent Review: potential bug detected",
+          "智能体审查：检测到潜在缺陷"
+        ],
+        [
+          "This is your last free Agent Review run. Future runs will be billed at your plan rate.",
+          "这是您最后一次免费的智能体审查。之后的运行将按您的套餐费率计费。"
+        ],
+        [
+          "Agent blocked",
+          "智能体已阻止"
+        ],
+        [
+          "Agent is blocked",
+          "智能体已被阻止"
+        ],
+        [
+          "Agent complete",
+          "智能体已完成"
+        ],
+        [
+          "Agent is waiting for a command to finish.",
+          "智能体正在等待命令完成。"
+        ],
+        [
+          "Agent is waiting for commands to finish.",
+          "智能体正在等待命令完成。"
+        ],
+        [
+          "Agent environment is not ready to connect MCP servers",
+          "智能体环境尚未就绪，无法连接 MCP 服务器"
+        ],
+        [
+          "Agent will ask for approval before running tools.",
+          "智能体在运行工具前会请求批准。"
+        ],
+        [
+          "Add MCP server",
+          "添加 MCP 服务器"
+        ],
+        [
+          "Add MCP Server",
+          "添加 MCP 服务器"
+        ],
+        [
+          "Add Plugins",
+          "添加插件"
+        ],
+        [
+          "Add Plugin",
+          "添加插件"
+        ],
+        [
+          "Add Skills",
+          "添加技能"
+        ],
+        [
+          "Add a Custom MCP Server",
+          "添加自定义 MCP 服务器"
+        ],
+        [
+          "Add a custom MCP tool in your Home MCP config.",
+          "在您的 Home MCP 配置中添加自定义 MCP 工具。"
+        ],
+        [
+          "Add a workspace to Cursor to see popular skills, MCPs, subagents, and commands here.",
+          "向 Cursor 添加工作区，即可在此查看热门技能、MCP、子智能体和命令。"
+        ],
+        [
+          "Search Plugins, Skills, MCPs...",
+          "搜索插件、技能、MCP..."
+        ],
+        [
+          "Plugins give your agents important context",
+          "插件为智能体提供重要上下文"
+        ],
+        [
+          "All MCP servers from this plugin are already added.",
+          "此插件的所有 MCP 服务器均已添加。"
+        ],
+        [
+          "Awaiting MCP tool approval",
+          "等待 MCP 工具批准"
+        ],
+        [
+          "Authenticate MCP server",
+          "验证 MCP 服务器"
+        ],
+        [
+          "Authenticated MCP server",
+          "MCP 服务器已验证"
+        ],
+        [
+          "Authenticating MCP server",
+          "正在验证 MCP 服务器"
+        ],
+        [
+          "Authentication URL unavailable for this MCP server.",
+          "此 MCP 服务器的验证 URL 不可用。"
+        ],
+        [
+          "Authentication URL unavailable for this cloud MCP server.",
+          "此云端 MCP 服务器的验证 URL 不可用。"
+        ],
+        [
+          "Blocked by MCP Network Admin Server Controls",
+          "被 MCP 网络管理员服务器控制阻止"
+        ],
+        [
+          "Reload MCP server",
+          "重新加载 MCP 服务器"
+        ],
+        [
+          "Reloading MCP server...",
+          "正在重新加载 MCP 服务器..."
+        ],
+        [
+          "Remove MCP server",
+          "移除 MCP 服务器"
+        ],
+        [
+          "Sign In to View Cloud MCP Servers",
+          "登录以查看云端 MCP 服务器"
+        ],
+        [
+          "Unable to check MCP status.",
+          "无法检查 MCP 状态。"
+        ],
+        [
+          "Unable to reach MCP server.",
+          "无法连接到 MCP 服务器。"
+        ],
+        [
+          "Automation Run",
+          "自动化运行"
+        ],
+        [
+          "Automation is now managed in code",
+          "自动化现已在代码中管理"
+        ],
+        [
+          "Automation is now managed in the dashboard",
+          "自动化现已在控制面板中管理"
+        ],
+        [
+          "Automation not found",
+          "未找到自动化"
+        ],
+        [
+          "Automation not found.",
+          "未找到自动化。"
+        ],
+        [
+          "Save Automation",
+          "保存自动化"
+        ],
+        [
+          "View Automation",
+          "查看自动化"
+        ],
+        [
+          "Untitled Automation",
+          "未命名自动化"
+        ],
+        [
+          "No-repo Automations",
+          "无仓库自动化"
+        ],
+        [
+          "Automation creation cancelled by user.",
+          "用户已取消创建自动化。"
+        ],
+        [
+          "Save this automation before adding or configuring MCP servers",
+          "添加或配置 MCP 服务器前请先保存此自动化"
+        ],
+        [
+          "Save this automation before testing MCP tools",
+          "测试 MCP 工具前请先保存此自动化"
+        ],
+        [
+          "One or more MCP tools used by this automation need to be authenticated or configured",
+          "此自动化使用的一个或多个 MCP 工具需要验证或配置"
+        ],
+        [
+          "Automations are not available until privacy mode is reconciled to a storage-eligible setting.",
+          "在隐私模式调整为符合存储要求的设置之前，自动化不可用。"
+        ],
+        [
+          "Automations use Cloud Agents, which require us to give agents access to your codebase. This is not compatible with Legacy Privacy Mode.",
+          "自动化使用云端智能体，需要授予智能体访问代码库的权限。这与旧版隐私模式不兼容。"
+        ],
+        [
+          "Ask a team admin to update your team's privacy setting to use automations.",
+          "请团队管理员更新团队隐私设置以使用自动化。"
+        ],
+        [
+          "Starting Multitask",
+          "正在启动多任务"
+        ],
+        [
+          "Parallelize Build with Multitask Mode.",
+          "使用多任务模式并行构建。"
+        ],
+        [
+          "Open Glass and Change to Multitask",
+          "打开 Glass 并切换到多任务"
+        ],
+        [
+          "Opens or focuses the Glass window, then selects Multitask mode there.",
+          "打开或聚焦 Glass 窗口，然后切换到多任务模式。"
+        ],
+        [
+          "Welcome to Cursor",
+          "欢迎使用 Cursor"
+        ],
+        [
+          "Bring your Claude Code sessions into Cursor.",
+          "将 Claude Code 会话带入 Cursor。"
+        ],
+        [
+          "Move to Cloud to keep running longer without your computer open.",
+          "迁移到云端，无需保持电脑开机即可长时间运行。"
+        ],
+        [
+          "Payment failed. Update your payment method to keep using Cursor.",
+          "付款失败。请更新付款方式以继续使用 Cursor。"
+        ],
+        [
+          "Please update your payment method to keep using Cursor.",
+          "请更新付款方式以继续使用 Cursor。"
+        ],
+        [
+          "This model is blocked by your administrator and cannot be enabled.",
+          "此模型已被管理员阻止，无法启用。"
+        ],
+        [
+          "This operation is blocked by your team admin.",
+          "此操作已被团队管理员阻止。"
+        ],
+        [
+          "Server is blocked by team admin",
+          "服务器已被团队管理员阻止"
+        ],
+        [
+          "Run Mode Controlled by Team Admin",
+          "运行模式由团队管理员控制"
+        ],
+        [
+          "Run Mode Controlled by Team Admin (Sandbox Enabled)",
+          "运行模式由团队管理员控制（已启用沙盒）"
+        ],
+        [
+          "Run Mode Disabled by Team Admin",
+          "运行模式已被团队管理员禁用"
+        ],
+        [
+          "Add plugins to marketplace",
+          "将插件添加到市场"
+        ],
+        [
+          "Add plugins to this marketplace so your team can install them.",
+          "将插件添加到此市场，以便团队安装。"
+        ],
+        [
+          "Search marketplace plugins",
+          "搜索市场插件"
+        ],
+        [
+          "Search the marketplace",
+          "搜索市场"
+        ],
+        [
+          "Remove marketplace?",
+          "移除市场？"
+        ],
+        [
+          "Remove marketplace confirmation",
+          "移除市场确认"
+        ],
+        [
+          "This marketplace and its access settings will be removed. The repository won't be affected.",
+          "此市场及其访问设置将被移除。仓库不会受到影响。"
+        ],
+        [
+          "This marketplace has already been imported. The plugins should already be available.",
+          "此市场已导入。插件应已可用。"
+        ],
+        [
+          "This marketplace will be removed from your account. The source repository won't be affected.",
+          "此市场将从您的账户中移除。源仓库不会受到影响。"
+        ],
+        [
+          "Plugin configuration is managed by your team",
+          "插件配置由您的团队管理"
+        ],
+        [
+          "Team Plugins cannot be uninstalled",
+          "团队插件无法卸载"
+        ],
+        [
+          "Team admins can configure shared MCP servers in the dashboard.",
+          "团队管理员可在控制面板中配置共享 MCP 服务器。"
+        ],
+        [
+          "Only team admins can edit team cloud MCP servers.",
+          "仅团队管理员可编辑团队云端 MCP 服务器。"
+        ],
+        [
+          "Only team admins can remove team cloud MCP servers.",
+          "仅团队管理员可移除团队云端 MCP 服务器。"
+        ],
+        [
+          "Return to Cursor to review and approve.",
+          "返回 Cursor 进行审查和批准。"
+        ],
+        [
+          "Open Cursor to answer the agent's questions.",
+          "打开 Cursor 以回答智能体的问题。"
+        ],
+        [
+          "Open in Cursor",
+          "在 Cursor 中打开"
+        ],
+        [
+          "Open in Cursor Browser",
+          "在 Cursor 浏览器中打开"
+        ],
+        [
+          "Use Cursor Browser",
+          "使用 Cursor 浏览器"
+        ],
+        [
+          "Use in Agents Window",
+          "在智能体窗口中使用"
+        ],
+        [
+          "Quit Cursor?",
+          "退出 Cursor？"
+        ],
+        [
+          "You'll be logged out of your Cursor account on this device.",
+          "您将在此设备上退出 Cursor 账户。"
+        ],
+        [
+          "This chat was created in an older version of Cursor and is no longer supported. Please start a new chat.",
+          "此对话创建于旧版 Cursor，已不再支持。请开始新对话。"
+        ],
+        [
+          "Cannot send a follow-up because this Cloud Agent has expired.",
+          "无法发送后续消息，因为此云端智能体已过期。"
+        ],
+        [
+          "Cloud Agent is not enabled. Please enable it in the settings.",
+          "云端智能体未启用。请在设置中启用。"
+        ],
+        [
+          "Cloud Agents are not supported for public repositories",
+          "公共仓库不支持云端智能体"
+        ],
+        [
+          "Cloud Agents are not supported for public repositories for which you are not a collaborator.",
+          "您非协作者的公共仓库不支持云端智能体。"
+        ],
+        [
+          "Cloud Agents require access to your GitHub/GitLab account",
+          "云端智能体需要访问您的 GitHub/GitLab 账户"
+        ],
+        [
+          "Upgrade to run Cloud Agents",
+          "升级以运行云端智能体"
+        ],
+        [
+          "Upgrade to Ultra for more Cloud Agents",
+          "升级到 Ultra 以获取更多云端智能体"
+        ],
+        [
+          "Babysit PR in Cloud",
+          "在云端看护 PR"
+        ],
+        [
+          "No Bugbot report was returned.",
+          "未返回 Bugbot 报告。"
+        ],
+        [
+          "No Bugbot reports were returned.",
+          "未返回 Bugbot 报告。"
+        ],
+        [
+          "Setup Bugbot",
+          "设置 Bugbot"
+        ],
+        [
+          "Bugbot Autofix Run",
+          "Bugbot 自动修复运行"
+        ],
+        [
+          "Webhook Triggered",
+          "Webhook 已触发"
+        ],
+        [
+          "Webhook triggered",
+          "Webhook 已触发"
+        ],
+        [
+          "Webhook event",
+          "Webhook 事件"
+        ],
+        [
+          "Remove webhook trigger",
+          "移除 Webhook 触发器"
+        ],
+        [
+          "Review 1 network access domain",
+          "审查 1 个网络访问域名"
+        ],
+        [
+          "Review before activating",
+          "激活前审查"
+        ],
+        [
+          "Review before saving",
+          "保存前审查"
+        ],
+        [
+          "Review before testing",
+          "测试前审查"
+        ],
+        [
+          "Pending Reviews",
+          "待审查"
+        ],
+        [
+          "User rejected MCP authentication",
+          "用户拒绝了 MCP 验证"
+        ],
+        [
+          "User skipped MCP authentication",
+          "用户跳过了 MCP 验证"
+        ],
+        [
+          "No workspace folder found, project hooks will not be available",
+          "未找到工作区文件夹，项目钩子将不可用"
+        ],
+        [
+          "Open a folder to configure workspace hooks.",
+          "打开文件夹以配置工作区钩子。"
+        ],
+        [
+          "Note that project hooks paths are relative to the workspace root.",
+          "请注意，项目钩子路径相对于工作区根目录。"
+        ],
+        [
+          "Note that user hooks paths are relative to ~/.cursor.",
+          "请注意，用户钩子路径相对于 ~/.cursor。"
+        ],
+        [
+          "Note that enterprise hooks paths are relative to the enterprise hooks config directory.",
+          "请注意，企业钩子路径相对于企业钩子配置目录。"
+        ],
+        [
+          "No enterprise hooks configuration found",
+          "未找到企业钩子配置"
+        ],
+        [
+          "Cleared team hooks - user has no team",
+          "已清除团队钩子 - 用户无团队"
+        ],
+        [
+          "Your personal cloud MCP servers.",
+          "您的个人云端 MCP 服务器。"
+        ],
+        [
+          "No User MCP Servers",
+          "无用户 MCP 服务器"
+        ],
+        [
+          "No Home MCP Tools",
+          "无 Home MCP 工具"
+        ],
+        [
+          "No cloud MCP scope is available.",
+          "无可用云端 MCP 范围。"
+        ],
+        [
+          "This MCP isn't connected or couldn't be found. Check the MCP name, then set it up or reconnect it before running this automation.",
+          "此 MCP 未连接或找不到。请检查 MCP 名称，在运行此自动化前进行设置或重新连接。"
+        ],
+        [
+          "The Cursor app is installed but needs additional permissions for this repository.",
+          "Cursor 应用已安装，但此仓库需要额外权限。"
+        ],
+        [
+          "The Cursor app needs to be installed on your repository to use Cloud Agents.",
+          "需要在仓库上安装 Cursor 应用才能使用云端智能体。"
+        ],
+        [
+          "To fix this, fully quit Cursor, move it to your Applications folder, then relaunch.",
+          "请完全退出 Cursor，将其移至应用程序文件夹，然后重新启动。"
+        ],
+        [
+          "By default, Cursor learns from code to help you get the best experience possible.",
+          "默认情况下，Cursor 会从代码中学习，以帮助您获得最佳体验。"
+        ],
+        [
+          "Try Cursor Pro free for 7 days. Entry-level plan with access to premium models, unlimited Tab completions, and more.",
+          "免费试用 Cursor Pro 7 天。入门级套餐，可使用高级模型、无限 Tab 补全等。"
+        ],
+        [
+          "Upgrade for Automations, unlimited completions, MAX Mode, and more",
+          "升级以获取自动化、无限补全、MAX 模式等"
+        ],
+        [
+          "Upgrade to Pro for more usage, frontier models, Cloud Agents and more",
+          "升级到 Pro 以获取更多用量、前沿模型、云端智能体等"
         ]
       ]
     },

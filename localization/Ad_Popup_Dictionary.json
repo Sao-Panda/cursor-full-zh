@@ -1,6 +1,6 @@
 {
   "description": "Cursor 左下角通知/推广弹窗（Notification Toast）专用翻译。修改后重新运行 Cursor_Localization_Tool.py 注入生效。",
-  "updatedAt": "2026-06-03",
+  "updatedAt": "2026-06-26",
   "entries": [
     ["Automations in the Agents Window", "智能体窗口中的自动化"],
     ["Save Time on Repetitive Tasks", "节省重复任务时间"],
@@ -97,6 +97,12 @@
     ["Delivers stronger performance on complex, multi-step coding tasks than Opus 4.7", "在复杂的多步骤编码任务上表现优于 Opus 4.7"],
     ["Fast Mode Available", "快速模式可用"],
     ["Get identical quality and capabilities with faster responses at a higher cost per token", "以更高的每 token 成本获得相同质量与能力，响应更快"],
-    ["Try Opus 4.8", "试用 Opus 4.8"]
+    ["Try Opus 4.8", "试用 Opus 4.8"],
+    ["A newer version of Cursor is available. We recommend updating for the best experience.", "有更新的 Cursor 版本可用。建议更新以获得最佳体验。"],
+    ["Update: restart Cursor to install", "更新：重启 Cursor 以完成安装"],
+    ["Bring your Claude Code sessions into Cursor.", "将 Claude Code 会话带入 Cursor。"],
+    ["Welcome to Cursor", "欢迎使用 Cursor"],
+    ["Parallelize Build with Multitask Mode.", "使用多任务模式并行构建。"],
+    ["Starting Multitask", "正在启动多任务"]
   ]
 }
